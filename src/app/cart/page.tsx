@@ -1,9 +1,8 @@
-import React from 'react'
+"use client"
+import React from "react"
 
 type Props = {}
 
 export default function CartPage({}: Props) {
-  return (
-    <div>page</div>
-  )
+  return <div>page</div>
 }

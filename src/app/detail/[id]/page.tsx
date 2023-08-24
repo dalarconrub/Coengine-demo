@@ -1,11 +1,10 @@
-import React from 'react'
+"use client"
+import React from "react"
 
 type Props = {
-    params: { id: string }
+  params: { id: string }
 }
 
-export default function ProductDetailPage({ params: {id}}: Props) {
-  return (
-    <div>I am product id: {id}</div>
-  )
+export default function ProductDetailPage({ params: { id } }: Props) {
+  return <div>I am product id: {id}</div>
 }
