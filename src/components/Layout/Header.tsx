@@ -55,12 +55,16 @@ export default function Header({}: Props) {
         <section className="flex font-bold gap-6 p-6 justify-center text-lg">
           <div className="flex gap-6">
             {["Shirts"].map((categoryName) => (
-              <Link href={`/products/${categoryName}`}>{categoryName}</Link>
+              <Link key={categoryName} href={`/products/${categoryName}`}>
+                {categoryName}
+              </Link>
             ))}
           </div>
           <div className="flex gap-6 ">
             {["Shoes", "Hats", "Jeans", "Belts", "Socks", "Jewelry", "Sale"].map((categoryName) => (
-              <p className="cursor-pointer last:text-red-500">{categoryName}</p>
+              <p key={categoryName} className="cursor-pointer last:text-red-500">
+                {categoryName}
+              </p>
             ))}
           </div>
         </section>
